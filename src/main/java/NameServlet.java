@@ -8,6 +8,7 @@ import java.io.PrintWriter;
 
 
 @WebServlet(name = "NameServlet", urlPatterns = "/name")
+//The above is just the end of the url /name
 public class NameServlet extends HttpServlet {
 
     @Override
@@ -16,5 +17,9 @@ public class NameServlet extends HttpServlet {
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
         out.println("<h1>Hello my name is Kotlin</h1>");
+
+        System.out.println(req.getParameter("cohort"));
+        //In the above we're looking for the value of cohort and what it equals is inside the url that we made. The value can be whatever
+        //Paramter is in the url http://localhost:8080/name?cohort=Kotlin
     }
 }
