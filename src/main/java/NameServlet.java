@@ -19,7 +19,10 @@ public class NameServlet extends HttpServlet {
         out.println("<h1>Hello my name is Kotlin</h1>");
 
         System.out.println(req.getParameter("cohort"));
+        //Getparanter can also be stored in a varible
         //In the above we're looking for the value of cohort and what it equals is inside the url that we made. The value can be whatever
         //Paramter is in the url http://localhost:8080/name?cohort=Kotlin
+
+        resp.sendRedirect("www.google.com");
     }
 }
