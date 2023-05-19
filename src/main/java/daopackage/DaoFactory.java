@@ -1,3 +1,7 @@
+package daopackage;
+
+import daopackage.Ads;
+
 public class DaoFactory {
     private static Ads adsDao;
 

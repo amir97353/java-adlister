@@ -10,6 +10,13 @@
 
     <div class="container">
         <h1>Viewing your profile.</h1>
+
+    </div>
+    <div>
+        <form action="/ads" method="get">
+            <button type="submit">View ads</button>
+
+        </form>
     </div>
 
 </body>
