@@ -24,11 +24,6 @@
 <%--    String password = request.getParameter("password");--%>
 <%--%>--%>
 
-
-</body>
-
-
-
 <c:choose>
     <c:when test="${param.username.equals('admin') && param.password.equals('password')}">
         <c:redirect url="profile.jsp" />
