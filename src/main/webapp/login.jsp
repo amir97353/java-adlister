@@ -23,6 +23,12 @@
 <%--    String userame= request.getParameter("username");--%>
 <%--    String password = request.getParameter("password");--%>
 <%--%>--%>
+<%--<c:choose>--%>
+<%--    <c:when test="username = admin " && "password = password>--%>
+<%--    response.sendRedirect("/profile");--%>
+
+<%--</c:when>--%>
+<%--</c:choose>--%>
 
 
 </body>
