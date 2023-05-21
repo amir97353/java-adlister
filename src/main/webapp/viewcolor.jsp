@@ -10,7 +10,7 @@
 <head>
     <title>Title</title>
 </head>
-<body style="background-color: ${userColor}">
+<body style="background-color: ${color}">
 
 
 </body>

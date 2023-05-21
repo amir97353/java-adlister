@@ -1,7 +1,8 @@
-import javax.print.DocFlavor;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "colorPick", value = "/colorPick")
@@ -14,7 +15,7 @@ public class colorPick extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String userColor = request.getParameter("userColor");
-        request.setAttribute("userColor", userColor);
-        response.sendRedirect("/viewcolor.jsp");
+//        request.setAttribute("userColor", userColor);
+        response.sendRedirect("/viewcolor?color=" + userColor);
     }
 }
