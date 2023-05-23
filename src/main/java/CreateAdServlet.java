@@ -19,6 +19,7 @@ public class CreateAdServlet extends HttpServlet {
             request.getParameter("description")
         );
         DaoFactory.getAdsDao().insert(ad);
+        //Dao factory is the top level. then getadsDao that is isnside Dao factory. Then the .insetr method and the .all method can be used.
         response.sendRedirect("/ads");
     }
 }
