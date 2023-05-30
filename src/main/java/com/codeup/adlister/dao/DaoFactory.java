@@ -13,6 +13,8 @@ public class DaoFactory {
     public static Ads getAdsDao() {
         if (adsDao == null) {
             adsDao = new MySQLAdsDao(config);
+            //How we establish connection goes here, but we're not actually establishing the connection here. We're doing it in the Daofactory that's whey in the Daofactory you have MySqlUsers.Dao with the config as an argument.
+            //adsDao
             // The constructor inside MySqLAdsDao requires Config as a parameter to establish the connection to Mysql. So above we make instantiate the Config object to use it as a parameter.
 
         }
